@@ -1,2 +1,3 @@
 # Qmactr
-Source code for Qmactr
+Source code for Qmactr.
+Coming soon.
