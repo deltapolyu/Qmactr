@@ -9,12 +9,10 @@ SRC_DIR = ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from qmactr.evaluate import evaluate_suite
-
 
 DEFAULT_TOPOLOGIES = "data/topology_template.json"
 DEFAULT_MAPPING_EPISODES = 5000
-DEFAULT_TRANSFORM_EPISODES = 1000
+DEFAULT_TRANSFORM_EPISODES = 2000
 
 
 def main() -> None:
@@ -50,6 +48,8 @@ def main() -> None:
         help="Training/inference device: auto, cpu, cuda, cuda:0, ...",
     )
     args = parser.parse_args()
+
+    from qmactr.evaluate import evaluate_suite
 
     if args.circuits.strip():
         circuits = [x.strip() for x in args.circuits.split(",") if x.strip()]

@@ -13,18 +13,14 @@ Run one circuit:
 ```bash
 PYTHONPATH=src python3 scripts/run_real.py \
   --circuits data/real/gf2^4_mult.qasm \
-  --topologies data/topology_template.json \
-  --mapping-episodes 4000 \
-  --transform-episodes 2000
+  --topologies data/topology_template.json
 ```
 
 Run all bundled circuits:
 
 ```bash
 PYTHONPATH=src python3 scripts/run_real.py \
-  --topologies data/topology_template.json \
-  --mapping-episodes 4000 \
-  --transform-episodes 2000
+  --topologies data/topology_template.json
 ```
 
 Edit `data/topology_template.json` to define your own topology. To run multiple
