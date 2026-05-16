@@ -1,5 +1,14 @@
 # Qmactr
 
+Qmactr is a reinforcement-learning framework for distributed quantum circuit
+transformation and mapping.
+
+## Paper
+
+The paper PDF can be placed at `paper/qmactr.pdf` and linked here:
+
+[Qmactr paper](paper/qmactr.pdf)
+
 ## Install
 
 ```bash
