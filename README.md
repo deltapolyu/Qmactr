@@ -14,8 +14,8 @@ Run one circuit:
 PYTHONPATH=src python3 scripts/run_real.py \
   --circuits data/real/gf2^4_mult.qasm \
   --topologies data/topology_template.json \
-  --mapping-episodes 180 \
-  --transform-episodes 90
+  --mapping-episodes 4000 \
+  --transform-episodes 2000
 ```
 
 Run all bundled circuits:
@@ -23,8 +23,8 @@ Run all bundled circuits:
 ```bash
 PYTHONPATH=src python3 scripts/run_real.py \
   --topologies data/topology_template.json \
-  --mapping-episodes 180 \
-  --transform-episodes 90
+  --mapping-episodes 4000 \
+  --transform-episodes 2000
 ```
 
 Edit `data/topology_template.json` to define your own topology. To run multiple
@@ -35,16 +35,6 @@ Use GPU when available:
 ```bash
 PYTHONPATH=src python3 scripts/run_real.py \
   --topologies data/topology_template.json \
-  --device cuda
-```
-
-Use a larger budget:
-
-```bash
-PYTHONPATH=src python3 scripts/run_real.py \
-  --topologies data/topology_template.json \
-  --mapping-episodes 4000 \
-  --transform-episodes 2000 \
   --device cuda
 ```
 
