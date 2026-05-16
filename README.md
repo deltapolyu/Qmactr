@@ -53,3 +53,8 @@ PYTHONPATH=src python3 scripts/run_real.py \
   --topologies data/topology_template.json \
   --out results/qft20_grid
 ```
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE) for
+details.
